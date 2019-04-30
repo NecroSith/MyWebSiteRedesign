@@ -1,0 +1,118 @@
+.skills {
+	padding-top: 150px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: $standard-light-grey;
+	@media screen and (max-width: 576px) {
+		padding-top: 70px;
+	}
+	>div .title {
+		display: block;
+		width: 100%;
+		@media screen and (max-width: 450px) {
+			font-size: 25px;
+			margin-bottom: 70px;
+		}
+	}
+	.skills__gallery {
+		background: url('../img/bg-portfolio.png'), linear-gradient(-250deg, #00d7c5 0%, rgba(3, 214, 172, 0.96) 53%, rgba(0, 215, 182, 0.92) 100%);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		display: flex;
+		.gallery__item {
+			width: 299px;
+			height: 300px;
+			background-color: yellow;
+		}
+	}
+	.skills__skill-wrapper {
+		padding: 0 200px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 70px;
+		@media screen and (max-width: 1280px) {
+			padding: 0 80px;
+		}
+		@media screen and (max-width: 768px) {
+			// padding: 0 40px;
+		}
+		@media screen and (max-width: 700px) {
+			padding: 0 40px;
+		}
+		@media screen and (max-width: 576px) {
+			// flex-wrap: wrap;
+			// padding: 0 50px;
+			// &:not(:first-child) {
+			// 	margin-top: 0;
+			// }
+			display: none;
+		}
+		&:not(:last-child) {
+			margin-bottom: 40px;
+			@media screen and (max-width: 576px) {
+				margin-bottom: 0;
+			}
+		}
+		.skills__skill {
+			display: inline-block;
+			position: relative;
+			@media screen and (max-width: 576px) {
+				margin-right: 15px;
+				margin-bottom: 30px;
+			}
+			&:not(:last-child) {
+				// margin-right: 25px;
+			}
+			.skill__svg {
+				width: 150px;
+				height: 150px;
+				@media screen and (max-width: 768px) {
+					width: 125px;
+					height: 125px;
+				}
+				linearGradient {
+					stop[offset="0%"] {
+						stop-color: $standard-linear-begin;
+					}
+					stop[offset="100%"] {
+						stop-color: $standard-linear-end;
+					}
+				}
+				circle {
+					fill: transparent;
+					stroke-width: 15px;
+					stroke-dasharray: 565.48px;
+					transform-origin: center;
+					transform: rotate(-90deg);
+					&:first-child {
+						stroke: $standard-black;
+					}
+					&.svg__value {
+						stroke: url(#grad);
+						// stroke-dashoffset: 200px;
+					}
+				}
+			}
+			span {
+				position: absolute;
+				top: 38%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 20px;
+				@media screen and (max-width: 768px) {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.skills__skill-wrapper--mobile {
+		.skills__skill.progress {
+			& .progress-bar {
+				background: linear-gradient(to right, $standard-linear-begin, $standard-linear-end);
+			}
+		}
+	}
+}

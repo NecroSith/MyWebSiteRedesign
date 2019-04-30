@@ -1,0 +1,92 @@
+.contact {
+	padding: 100px 170px 50px 170px;
+	background-color: $standard-black;
+	text-align: center;
+	@media screen and (max-width: 768px) {
+		padding: 100px 100px 50px 100px;
+	}
+	@media screen and (max-width: 576px) {
+		padding: 70px 10px 50px 10px;
+	}
+	.contact__form {
+		@media screen and (max-width: 576px) {
+			margin-top: 90px;
+		}
+		margin-top: 180px;
+		input {
+			margin-bottom: 40px;
+			height: 35px;
+			@extend .input-styles;
+			&:focus, 
+			&:-internal-autofill-selected {
+				color: $standard-green;
+				border-bottom: 2px solid $standard-green;
+				background-color: $standard-black;
+			}
+		}
+		textarea {
+			@extend .input-styles;
+			resize: none;
+		}
+	}
+	.contact__btn-send {
+		@include button-gradient-border(181px, 53px);
+		margin: 70px auto 0 auto;
+		background: transparent;
+		transition: none;
+		&:hover {
+			background: linear-gradient(to bottom, #00f298 0%, #07f7f7 100%);
+			// transition: all 0.3s ease-in;
+		}
+	}
+	.contact__social {
+		margin-top: 150px;
+		margin-bottom: 70px;
+		@media screen and (max-width: 576px) {
+			margin-top: 90px;
+		}
+		ul {
+			@extend .no-margin-padding;
+			display: flex;
+			justify-content: center;
+			& > a:not(:last-child) {
+				margin-right: 4%;
+			}
+			li {
+				cursor: pointer;
+				width: 53px;
+				height: 52px;
+				border-radius: 50%;
+				list-style-type: none;
+				padding-top: 15px;
+				background-color: #313741;
+				transition: all 0.3s ease-in;
+				.fab {
+					font-size: 21px;
+					font-weight: 400;
+					text-transform: uppercase;
+					letter-spacing: 0.83px;
+					color: $standard-green;
+					transition: all 0.3s ease-in;
+				}
+				&:hover {
+					background-color: #02cfb4;
+					transition: all 0.3s ease-in;
+					.fab {
+						color: #313741;
+						transition: all 0.3s ease-in;
+					}
+				}
+			}
+		}
+	}
+	.contact__copyright {
+		margin-top: 40px;
+		color: #02cfb4;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+		letter-spacing: 0.56px;
+	}
+}

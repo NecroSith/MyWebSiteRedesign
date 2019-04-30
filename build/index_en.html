@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personal site of Yan Pustynnyy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="libs/bootstrap-4.0.0/dist/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" type="text/css" href="libs/fancybox3/jquery.fancybox.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<a href="#main" class="d-none d-md-block"><div class="btn-up">
+		<i class="fas fa-chevron-up"></i>
+	</div></a>
+
+	<section class="main" id="main">
+		<div class="container">
+			<nav class="main__nav">
+				<div class="nav__social">
+					<ul>
+						<li>
+							<a href="https://vk.com/necrosith" target="__blank"><i class="fab fa-vk"></i></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/yan.pustynnyy" target="__blank"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li>
+							<a href="https://github.com/NecroSith" target="__blank"><i class="fab fa-github"></i></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/yanpustynnyy/" target="__blank"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/YanPustynnyy" target="__blank"><i class="fab fa-twitter"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav__menu">
+					<ul>
+						<a href="#about"><li>About me</li></a>
+						<a href="#education" class="hide"><li>Education</li></a>
+						<a href="#experience"><li>Jobs</li></a>
+						<a href="#portfolio"><li>Portfolio</li></a>
+						<a href="#contact"><li>Contact</li></a>
+						<a href="/index.html"><li>Ru</li></a>
+					</ul>
+				</div>
+				<div class="nav__menu--mobile">
+				  <div class="menu__line half start"></div>
+				  <div class="menu__line"></div>
+				  <div class="menu__line half end"></div>
+				</div>
+			</nav>
+
+			<div class="main__title">
+				<h1>Hi there!</h1>
+				 <h2>I'm <b>Yan Pustynnyy</b></h2>
+				<p class="d-none d-lg-inline-block">&nbsp;<pre id="write-en" class="d-none d-lg-inline-block"></pre></p>
+				<p class="d-inline-block d-lg-none">Frontend developer</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">
+			<div class="about__left-block col-lg-6">
+				
+				<div class="photo__border">
+					<div class="left-block__photo"></div>
+				</div>
+				<a href="files/resume_Pustynnyy_ru.pdf" download><button class="left-block__button-linear">
+						<i class="fas fa-cloud-download-alt"></i>
+						Download CV
+					</button></a>
+			</div>
+			<div class="about__right-block col-lg-5">
+				<div class="about__info">
+					<h3 class="info__title">About me</h3>
+					<p>Hi! I'm Yan Pustynnyy, I'm a frontend developer. I have been doing this since the beginning of 2018. I have experience in making different kinds of web content starting from simple landings to complex project as a part of the development team. I have deep knowledge of HTML/CSS and Javascript/jQuery. </p>
+					<ul>
+						<li><span class="info__subtitle">Name:</span> Ян Пустынный</li>
+						<li><span class="info__subtitle">Birth date:</span> 04 августа 1993 года</li>
+						<li><span class="info__subtitle">Phone:</span> +7 953 931 00 73</li>
+						<li><span class="info__subtitle">Email:</span> y.pustynnyy@yandex.ru</li>
+						<li><span class="info__subtitle">Website:</span> yanpustynnyy.ru</li>
+						<!-- <li><span class="info__subtitle">Блог:</span> y.pustynnyy@yandex.ru</li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="about__interests d-none d-md-block col-lg-9 offset-lg-1">
+				<h3 class="title">My interests</h3>
+				<ul class="info__interests">
+					<li>
+						<i class="fas fa-robot"></i>
+						<span>Robotics</span>
+					</li>
+					<li>
+						<i class="fas fa-bolt"></i>
+						<span>Electrical engineering</span>
+					</li>
+					<li>
+						<i class="fas fa-moon"></i>
+						<span>Astronomy</span>
+					</li>
+					<li>
+						<i class="fas fa-gamepad"></i>
+						<span>Computer games</span>
+					</li>
+					<li>
+						<i class="fas fa-plane"></i>
+						<span>Traveling</span>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="education d-none d-sm-block" id="education">
+		<div class="container">
+			<h3 class="title">
+				Education
+			</h3>
+			<div class="timeline">
+				<div class="timeline__container left content__start">
+					<i class="fas fa-graduation-cap"></i>
+				</div>
+				<div class="timeline__container left">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Bachelor's degree
+						</h3>
+						<p>September 2011 - June 2015</p>
+						<p>Northern Arctic Federal University named after M.V.Lomonosov</p>
+						<span>Specialization: Quality management in social-economic and technical systems</span>
+					</div>
+				</div>
+				<div class="timeline__container right">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Master's degree
+						</h3>
+						<p>September 2015 - July 2017</p>
+						<p>Northern Arctic Federal University named after M.V.Lomonosov</p>
+						<span>Specialization: Computer science<br> Thesis: The application of methodology of automation of intellectual labour to classification of spatial images</span>
+					</div>
+				</div>
+				<div class="timeline__container left">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Postgraduate
+						</h3>
+						<p>November 2017 - November 2020</p>
+						<p>Federal center for integrated Arctic research</p>
+						<span>Specialization: Landscape Ecology <br> Thesis: The application of LSTM neural networks to make forecast model of the environment of Arkhangelsk region.</span>
+					</div>
+				</div>
+				<div class="timeline__container right">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							HTML Development course
+						</h3>
+						<p>January 2018 - May 2018</p>
+						<p>Webcademy.ru</p>
+						<span>Making landing pages and static web sites <br> Skills: HTML, CSS, Bootstrap, Javascript <br> The course is completed <a href="#">with distiction</a> </span>
+					</div>
+				</div>
+				<div class="timeline__container left">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Web Development course
+						</h3>
+						<p>May 2018 - August 2018</p>
+						<p>Webcademy.ru</p>
+						<span>Making complex web sites, web stores and CMS<br>Skills: HTML, CSS, Bootstrap, Javascript, jQuery, PHP, PDO, MySQL<br> The course is completed <a href="#">successfully</a> </span>
+					</div>
+				</div>
+				<div class="timeline__container right">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Javascript Course
+						</h3>
+						<p>October 2018 - Ноябрь 2018</p>
+						<p>Glo Academy</p>
+						<span>Making web applications and creating interactive elements for web sites.<br> Skills: Javascript jQuery <br> The course is completed <a href="#">with distinction</a> and <a href="#">recommendation</a> </span>
+					</div>
+				</div>
+				<div class="timeline__container left content__end">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="whyme" id="whyme">
+		<div class="container">
+			<h3 class="title">
+				Why work with me?
+			</h3>
+			<div class="whyme__pros row">
+				<div class="pros__item col-xs-12 col-md-6">
+					<div class="item__img">
+						<i class="fas fa-tools"></i>
+					</div>
+					<div class="item__text">
+						<p class="text__title">Quality assuarance</p>
+						<p class="text__desc">There is a 30-day free technical support for all the projects I do, within which I fix the bugs and malfunctions in my work if any detected.</p>
+					</div>
+				</div>
+				<div class="pros__item col-xs-12 col-md-6">
+					<div class="item__img">
+						<i class="fas fa-mobile-alt"></i>
+					</div>
+					<div class="item__text">
+						<p class="text__title">Full adaptivity</p>
+						<p class="text__desc">All projects are made for 3 screens at minimum (mobile devices, tablets and desktops) and look good at any screen width.</p>
+					</div>
+				</div>
+				<div class="pros__item col-xs-12 col-md-6">
+					<div class="item__img">
+						<i class="fas fa-globe"></i>
+					</div>
+					<div class="item__text">
+						<p class="text__title">Modern technologies</p>
+						<p class="text__desc">I use the latest libraries, frameworks and paradigms in my work.</p>
+					</div>
+				</div>
+				<div class="pros__item col-xs-12 col-md-6">
+					<div class="item__img">
+						<i class="fas fa-dollar-sign"></i>
+					</div>
+					<div class="item__text">
+						<p class="text__title">Reasonable price</p>
+						<p class="text__desc">Careful work on the project pricing followed by a price report.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="career" id="experience">
+		<div class="container">
+			<h3 class="title">
+				Job experience
+			</h3>
+			<div class="timeline">
+				<div class="timeline__container left content__start">
+					<i class="fas fa-briefcase"></i>
+				</div>
+				<div class="timeline__container left">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							GIS Engineer
+						</h3>
+						<p>March 2017 - present</p>
+						<p>Department of information and communication technologies</p>
+						<span>Creating and coniguring web maps and web mapping applications with use of ArcGIS and GeoServer or with vanilla Javascript. Technical support of web site of Atlas of the Arkhangelsk region (made with React.js).</span>
+					</div>
+				</div>
+				<div class="timeline__container right">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Frontend developer
+						</h3>
+						<p>July 2018 - November 2018</p>
+						<p>RunWay Sale</p>
+						<span>Creating web pages for Warehouse Management Portal. Creating interactive elements with Javascript/jQuery. Configuring content display with Knockout.js.</span>
+					</div>
+				</div>
+				<div class="timeline__container left">
+					<div class="timeline__content">
+						<h3 class="title timeline__title">
+							Frontend tester
+						</h3>
+						<p>November 2018 - December 2018</p>
+						<p>Rabotavgorode WebTeam</p>
+						<span>HTML and script testing for job search website using Jest.</span>
+					</div>
+				</div>
+				<div class="timeline__container left content__end">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="skills">
+		<div class="container">
+			<div class="title">
+				Professional skills
+			</div>
+			<div class="skills__skill-wrapper--mobile"></div>
+			<div class="skills__skill-wrapper">
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--html" r="90" cx="100" cy="100" stroke="url(#grad)"/>
+						<linearGradient id="grad">
+							<stop offset="0%" />
+							<stop offset="100%"/>
+						</linearGradient>
+					</svg>
+					<span>html</span>
+				</div>
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--css" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>css</span>
+				</div>
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--javascript" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>javascript</span>
+				</div>
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--bootstrap" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>bootstrap</span>
+				</div>
+			</div>
+			<div class="skills__skill-wrapper">
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--npm" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>npm/yarn</span>
+				</div>
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--gulp" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>gulp</span>
+				</div>
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--jquery" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>jquery</span>
+				</div>
+				<div class="skills__skill">
+					<svg class="skill__svg" viewbox="0 0 200 200">
+						<circle r="90" cx="100" cy="100"  />	
+						<circle class="svg__value value--sass" r="90" cx="100" cy="100"/>
+					</svg>
+					<span>sass/less</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="title">
+			<h3 class="title" id="portfolio">Projects</h3>
+		</div>
+		<div class="portfolio__gallery">
+			<!-- <div class="container"> -->
+				<ul>
+					<li data-fancybox="gallery" data-src="img/runway.png" data-caption="RunWay Sale Warehouse Management Portal">
+						<img src="img/runway.png" alt="">
+						<div class="gallery-item__overlay">
+							<i class="fas fa-plus"></i>
+							<span>RunwaySale Warehouse Management Portal</span>
+						</div>
+					</li>
+					<li data-fancybox="gallery" data-src="img/bringitup.png" data-caption="Bring It Up website">
+						<img src="img/bringitup.png" alt="">
+						<div class="gallery-item__overlay">
+							<i class="fas fa-plus"></i>
+							<span>Bring it up website</span>
+						</div>
+					</li>
+					<li data-fancybox="gallery" data-src="img/alfagear.png" data-caption="Alfagear snow suit shop">
+						<img src="img/alfagear.png" alt="">
+						<div class="gallery-item__overlay">
+							<i class="fas fa-plus"></i>
+							<span>AlfaGear landing page</span>
+						</div>
+					</li>
+					<li data-fancybox="gallery" data-src="img/mrtravel.png" data-caption="MRTravel travel agency landing page">
+						<img src="img/mrtravel.png" alt="">
+						<div class="gallery-item__overlay">
+							<i class="fas fa-plus"></i>
+							<span>Mrtravel landing page</span>
+						</div>
+					</li>
+					<li data-fancybox="gallery" data-src="img/apollo.png" data-caption="Apollo landing page">
+						<img src="img/apollo.png" alt="">
+						<div class="gallery-item__overlay">
+							<i class="fas fa-plus"></i>
+							<span>Apollo landing page</span>
+						</div>
+					</li>
+					<li data-fancybox="gallery" data-src="img/portfolio.png" data-caption="My personal site portfolio">
+						<img src="img/portfolio.png" alt="">
+						<div class="gallery-item__overlay">
+							<i class="fas fa-plus"></i>
+							<span>My personal site portfolio</span>
+						</div>
+					</li>
+				</ul>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<h3 class="title">
+				Contact me
+			</h3>
+			<form action="#" class="contact__form" onsubmit="grecaptcha.ready(function() {
+      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });">
+				<div class="row">
+					<div class="col-lg-4">
+						<input type="text" name="name" placeholder="Name" tabindex="1">
+					</div>
+					<div class="col-lg-4">
+						<input type="email" name="email" placeholder="Email" tabindex=2">
+					</div>
+					<div class="col-lg-4">
+						<input type="phone" name="phone" placeholder="Phone" tabindex="3">
+					</div>	
+					<textarea class="col-lg-12" name="message" id="" cols="30" rows="10" placeholder="Message" tabindex="4"></textarea>
+				</div>
+				<div class="row">
+					<button type="submit" class="contact__btn-send">Send</button>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col-lg-12 contact__social">
+					<ul>
+						<a href="https://vk.com/necrosith" target="__blank">
+							<li>
+								<i class="fab fa-vk"></i>
+							</li>
+						</a>
+						<a href="https://www.facebook.com/yan.pustynnyy" target="__blank">
+							<li>
+								<i class="fab fa-facebook-square"></i>
+							</li>
+						</a>
+						<a href="https://github.com/NecroSith" target="__blank">
+							<li>
+								<i class="fab fa-github"></i>
+							</li>
+						</a>
+						<a href="https://www.linkedin.com/in/yanpustynnyy/" target="__blank">
+							<li>
+								<i class="fab fa-linkedin-in"></i>
+							</li>
+						</a>
+						<a href="https://twitter.com/YanPustynnyy" target="__blank">
+							<li>
+								<i class="fab fa-twitter"></i>
+							</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="contact__copyright">
+				yan pustynnyy © 2019. ALL RIGHTS RESERVED.
+			</div>
+		</div>
+	</section>
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b"></script>
+	  <script>
+	  grecaptcha.ready(function() {
+	      grecaptcha.execute('6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b', {action: 'homepage'}).then(function(token) {
+	      });
+	  });
+	  </script>
+
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+	<script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+
+	<script src="js/main.js"></script>
+	<script src="js/en.js"></script>
+
+</body>
+</html>

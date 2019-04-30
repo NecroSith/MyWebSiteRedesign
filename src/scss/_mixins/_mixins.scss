@@ -1,0 +1,44 @@
+@mixin button-linear($width, $height) {
+	cursor: pointer;
+	width: $width;
+	height: $height;
+	box-shadow: 2px 2px 43px rgba(38, 225, 178, 0.34);
+	border-radius: 5px;
+	background: linear-gradient(85deg, $standard-green 0%, rgba(25, 204, 126, 0.96) 53%, rgba(11, 239, 156, 0.92) 100%);
+	transition: all 0.3s ease-in;
+	.fas {
+		transition: all 0.3s ease-in;
+		margin-right: 5px;
+	}
+	&:hover, &:focus, &:active {
+		background: linear-gradient(85deg, rgba(11, 239, 156, 0.92) 0%, rgba(25, 204, 126, 0.96) 53%, $standard-green 100%);
+		transition: all 0.3s ease-in;
+		transform: scale(1.1);
+		.fas {
+			transition: all 0.3s ease-in;
+		}
+	}
+}
+
+@mixin button-gradient-border($width, $height) {
+	cursor: pointer;
+	color: #02cfb4;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 0.01px;
+	text-transform: uppercase;
+	letter-spacing: 0.25px;
+	width: $width;
+	height: $height;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to bottom, #00f298 0%, #07f7f7 100%);
+	border-image-slice: 1;
+	background: transparent;
+	transition: all 0.3s ease-in;
+	&:hover, &:focus {
+		background: linear-gradient(to bottom, #00f298 0%, #07f7f7 100%);
+		color: $standard-black;
+		transition: all 0.3s ease-in;
+		border: 1px solid $standard-black;
+	}
+}

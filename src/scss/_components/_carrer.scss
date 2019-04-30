@@ -1,0 +1,37 @@
+.career {
+	background-color: $standard-black;
+	height: auto;
+	padding-bottom: 150px;
+	padding-top: 150px;
+	text-align: center;
+	@media screen and (max-width: 576px) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	>.title {
+		padding-bottom: 100px;
+	}
+	.content__start.timeline__container {
+		.fas {
+			left: 97.5%;
+			@media screen and (max-width: 768px) {
+				left: 96.5%;
+			}
+			@media screen and (max-width: 660px) {
+				left: 95.5%;
+			}
+			@media screen and (max-width: 460px) {
+				left: 93.5%;
+			}
+			@media screen and (max-width: 384px) {
+				left: 92.5%;
+			}
+			@media screen and (max-width: 340px) {
+				left: 91.5%;
+			}
+		}
+	}
+	.content__start.timeline__container:after {
+		background-color: $standard-black;
+	}
+}
