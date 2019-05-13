@@ -2,8 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Personal site of Yan Pustynnyy</title>
+	<title>Yan Pustynnyy's personal website</title>
+	<meta name="description" content="Hi there! My name is Yan Pustynnyy. I am a frontend developer, I make websites of different complexity. In my work I use HTML/CSS, Javascript/jQuery, React/Redux, Wordpress/Modx."> 
+
+	<meta property="og:image" content="img/thumbnail.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b"></script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(47839577, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/47839577" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -100,23 +127,23 @@
 				<ul class="info__interests">
 					<li>
 						<i class="fas fa-robot"></i>
-						<span>Robotics</span>
+						<div>Robotics</div>
 					</li>
 					<li>
 						<i class="fas fa-bolt"></i>
-						<span>Electrical engineering</span>
+						<div>Electrical engineering</div>
 					</li>
 					<li>
 						<i class="fas fa-moon"></i>
-						<span>Astronomy</span>
+						<div>Astronomy</div>
 					</li>
 					<li>
 						<i class="fas fa-gamepad"></i>
-						<span>Computer games</span>
+						<div>Computer games</div>
 					</li>
 					<li>
 						<i class="fas fa-plane"></i>
-						<span>Traveling</span>
+						<div>Traveling</div>
 					</li>
 				</ul>
 			</div>
@@ -422,11 +449,7 @@
 			<h3 class="title">
 				Contact me
 			</h3>
-			<form action="#" class="contact__form" onsubmit="grecaptcha.ready(function() {
-      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-         ...
-      });
-  });">
+			<form action="#" class="contact__form" onsubmit="ym(47839577, 'reachGoal', 'formSubmit');">
 				<div class="row">
 					<div class="col-lg-4">
 						<input type="text" name="name" placeholder="Name" tabindex="1">
@@ -441,6 +464,7 @@
 				</div>
 				<div class="row">
 					<button type="submit" class="contact__btn-send">Send</button>
+					<div class="success"></div>
 				</div>
 			</form>
 			<div class="row">
@@ -481,12 +505,26 @@
 		</div>
 	</section>
 
-	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b"></script>
-	  <script>
-	  grecaptcha.ready(function() {
-	      grecaptcha.execute('6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b', {action: 'homepage'}).then(function(token) {
-	      });
-	  });
+	<script>
+	  
+
+         grecaptcha.ready(function() {
+        grecaptcha.execute('6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b', {action: 'add_comment'})
+            .then(function(token) {
+                var data = new FormData();
+                data.append("action", 'add_comment');
+                data.append("token", token);
+ 
+                fetch('verifyCaptcha.php', {
+                    method: 'POST',
+                    body: data
+                }).then(function(response) {
+                    response.json().then(function(data) {
+                        if (!data) document.getElementById('commentForm').style.display = 'none';
+                    });
+                });
+            });
+    });
 	  </script>
 
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>

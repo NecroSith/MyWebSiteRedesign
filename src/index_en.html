@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Персональный сайт портфолио Яна Пустынного</title>
+	<title>Yan Pustynnyy's personal website</title>
+	<meta name="description" content="Hi there! My name is Yan Pustynnyy. I am a frontend developer, I make websites of different complexity. In my work I use HTML/CSS, Javascript/jQuery, React/Redux, Wordpress/Modx."> 
+
+	<meta property="og:image" content="img/thumbnail.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b"></script>
 
@@ -120,23 +127,23 @@
 				<ul class="info__interests">
 					<li>
 						<i class="fas fa-robot"></i>
-						<span>Robotics</span>
+						<div>Robotics</div>
 					</li>
 					<li>
 						<i class="fas fa-bolt"></i>
-						<span>Electrical engineering</span>
+						<div>Electrical engineering</div>
 					</li>
 					<li>
 						<i class="fas fa-moon"></i>
-						<span>Astronomy</span>
+						<div>Astronomy</div>
 					</li>
 					<li>
 						<i class="fas fa-gamepad"></i>
-						<span>Computer games</span>
+						<div>Computer games</div>
 					</li>
 					<li>
 						<i class="fas fa-plane"></i>
-						<span>Traveling</span>
+						<div>Traveling</div>
 					</li>
 				</ul>
 			</div>
@@ -442,11 +449,7 @@
 			<h3 class="title">
 				Contact me
 			</h3>
-			<form action="#" class="contact__form" onsubmit="grecaptcha.ready(function() {
-      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-         ...
-      });
-  });">
+			<form action="#" class="contact__form" onsubmit="ym(47839577, 'reachGoal', 'formSubmit');">
 				<div class="row">
 					<div class="col-lg-4">
 						<input type="text" name="name" placeholder="Name" tabindex="1">
@@ -461,6 +464,7 @@
 				</div>
 				<div class="row">
 					<button type="submit" class="contact__btn-send">Send</button>
+					<div class="success"></div>
 				</div>
 			</form>
 			<div class="row">

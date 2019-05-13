@@ -110,3 +110,25 @@ hr {
 		max-width: unset;
 	}
 }
+
+.success {
+	width: 75px; 
+	height: 75px; 
+	position: absolute; 
+	top: 47%; 
+	left: 62%; 
+	background-size: contain;
+	@media screen and (max-width: 1186px) {
+		left: 70%;
+	}
+	@media screen and (max-width: 768px) {
+		left: 80%;
+	}
+	@media screen and (max-width: 400px) {
+		left: 22%;
+		top: -154%;
+		width: 200px;
+		height: 175px;
+		z-index: 20;
+	}
+}

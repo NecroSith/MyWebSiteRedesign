@@ -12,13 +12,11 @@ var skills = {
 function setSkills(skills) {
 	var svgValues = $('.svg__value');
 	var progressWrapper = $('.skills__skill-wrapper--mobile');
-	// console.log(svgValues);
 	for (var i = 0; i < svgValues.length; i++) {
 		var svgValue = svgValues[i].classList[1],
 			valueType = svgValue.split("value--")[1];
-		// console.log(valueType);
 		for (var key in skills) {
-			// console.log(key);
+			// svgValues[i].style.strokeDashoffset = '565.48';
 			if (valueType == key) {
 				svgValues[i].style.strokeDashoffset = 565.48 - (565.48 * (skills[key] / 100));
 			}
@@ -134,10 +132,12 @@ btnMenuMobile.on('click', function() {
 	}
 });
 
-menuPoint.on('click', function() {
-	btnMenuMobile.css('position', 'relative');
-	btnMenuMobile.find('.menu__line').css('background', 'white');
-	$('body').css('overflowY', 'auto');
-	menu.css('display', 'none');
-	btnMenuMobile.removeClass('open');
-});
+if ($(window).width() <= 1121) {
+	menuPoint.on('click', function() {
+		btnMenuMobile.css('position', 'relative');
+		btnMenuMobile.find('.menu__line').css('background', 'white');
+		$('body').css('overflowY', 'auto');
+		menu.css('display', 'none');
+		btnMenuMobile.removeClass('open');
+	});
+}

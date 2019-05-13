@@ -102,6 +102,27 @@ hr {
   .container {
     max-width: unset; } }
 
+.success {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 47%;
+  left: 62%;
+  background-size: contain; }
+  @media screen and (max-width: 1186px) {
+    .success {
+      left: 70%; } }
+  @media screen and (max-width: 768px) {
+    .success {
+      left: 80%; } }
+  @media screen and (max-width: 400px) {
+    .success {
+      left: 22%;
+      top: -154%;
+      width: 200px;
+      height: 175px;
+      z-index: 20; } }
+
 .main__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,7 +516,7 @@ hr {
           -webkit-transition: all 0.3s ease-in;
           -o-transition: all 0.3s ease-in;
           transition: all 0.3s ease-in; }
-        .about__interests .info__interests li:hover span {
+        .about__interests .info__interests li:hover div {
           display: inline-block;
           -webkit-transition: all 0.3s ease-in;
           -o-transition: all 0.3s ease-in;
@@ -508,12 +529,13 @@ hr {
         -webkit-transition: all 0.3s ease-in;
         -o-transition: all 0.3s ease-in;
         transition: all 0.3s ease-in; }
-      .about__interests .info__interests li span {
+      .about__interests .info__interests li div {
         position: absolute;
         margin-top: 10px;
-        font-size: 25px;
+        width: 170%;
+        left: -35%;
+        font-size: 18px;
         top: 100px;
-        left: -40px;
         opacity: 0;
         -webkit-transition: all 0.3s ease-in;
         -o-transition: all 0.3s ease-in;
@@ -855,6 +877,10 @@ hr {
           .skills .skills__skill-wrapper .skills__skill .skill__svg circle:first-child {
             stroke: #22252c; }
           .skills .skills__skill-wrapper .skills__skill .skill__svg circle.svg__value {
+            stroke-dashoffset: 565.48;
+            -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0, 0, 1, 1);
+            -o-transition: stroke-dashoffset 0.5s cubic-bezier(0, 0, 1, 1);
+            transition: stroke-dashoffset 0.5s cubic-bezier(0, 0, 1, 1);
             stroke: url(#grad); }
       .skills .skills__skill-wrapper .skills__skill span {
         position: absolute;

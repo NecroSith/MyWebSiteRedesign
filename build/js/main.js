@@ -12,13 +12,11 @@ var skills = {
 function setSkills(skills) {
 	var svgValues = $('.svg__value');
 	var progressWrapper = $('.skills__skill-wrapper--mobile');
-	// console.log(svgValues);
 	for (var i = 0; i < svgValues.length; i++) {
 		var svgValue = svgValues[i].classList[1],
 			valueType = svgValue.split("value--")[1];
-		// console.log(valueType);
 		for (var key in skills) {
-			// console.log(key);
+			// svgValues[i].style.strokeDashoffset = '565.48';
 			if (valueType == key) {
 				svgValues[i].style.strokeDashoffset = 565.48 - (565.48 * (skills[key] / 100));
 			}
@@ -85,25 +83,25 @@ $('.contact__form').validate({
 
 function ajaxFormSubmit() {
 	var string = $('.contact__form').serialize();
+	var successBlock = $('.success');
+	var successImg = 'img/checknew.gif';
 
 	$.ajax({
 		type: 'POST',
 		url: 'php/mail.php',
 		data: string,
-	});
 
-	$.ajax({
-		type: 'POST',
-		url: 'https://www.google.com/recaptcha/api/siteverify',
-		data: {
-			secret: '6Leblp8UAAAAABODizo7WqAw8LIvv7jbNlKXxB73',
-			response: '6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b'
-		},
-
-		success: function(html){
-				$("#contact-form").slideUp(800);
-				$('#answer').html(html);
-			}
+		success: function() {
+			$(':input:not([type=hidden])').each(function(index, el) {
+				$(this).val('');
+				successBlock.css('display', 'block');
+				successBlock.css('backgroundImage', 'url(' + successImg + ')');
+				setTimeout(function() {
+					successBlock.fadeOut('400');
+					successBlock.css('backgroundImage', 'none');
+				}, 3000);
+			});
+		}
 	});
 
 	return false;
@@ -134,10 +132,12 @@ btnMenuMobile.on('click', function() {
 	}
 });
 
-menuPoint.on('click', function() {
-	btnMenuMobile.css('position', 'relative');
-	btnMenuMobile.find('.menu__line').css('background', 'white');
-	$('body').css('overflowY', 'auto');
-	menu.css('display', 'none');
-	btnMenuMobile.removeClass('open');
-});
+if ($(window).width() <= 1121) {
+	menuPoint.on('click', function() {
+		btnMenuMobile.css('position', 'relative');
+		btnMenuMobile.find('.menu__line').css('background', 'white');
+		$('body').css('overflowY', 'auto');
+		menu.css('display', 'none');
+		btnMenuMobile.removeClass('open');
+	});
+}

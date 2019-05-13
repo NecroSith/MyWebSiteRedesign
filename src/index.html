@@ -3,7 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Персональный сайт портфолио Яна Пустынного</title>
+	<meta name="description" content="Привет! Меня зовут Ян Пустынный. Я фронтенд разработчик, занимаюсь созданием сайтов различной сложности. Работаю на HTML/CSS, Javascript/jQuery, React/Redux, Wordpress/Modx">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:image" content="img/thumbnail.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
+
 	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b"></script>
 
 	<!-- Yandex.Metrika counter -->
@@ -120,23 +127,23 @@
 				<ul class="info__interests">
 					<li>
 						<i class="fas fa-robot"></i>
-						<span>Робототехника</span>
+						<div>Робототехника</div>
 					</li>
 					<li>
 						<i class="fas fa-bolt"></i>
-						<span>Электротехника</span>
+						<div>Электротехника</div>
 					</li>
 					<li>
 						<i class="fas fa-moon"></i>
-						<span>Астрономия</span>
+						<div>Астрономия</div>
 					</li>
 					<li>
 						<i class="fas fa-gamepad"></i>
-						<span>Компьютерные игры</span>
+						<div>Компьютерные игры</div>
 					</li>
 					<li>
 						<i class="fas fa-plane"></i>
-						<span>Путешествия</span>
+						<div>Путешествия</div>
 					</li>
 				</ul>
 			</div>
@@ -442,7 +449,7 @@
 			<h3 class="title">
 				Связаться со мной
 			</h3>
-			<form action="verifyCaptcha.php" class="contact__form" id="contactForm">
+			<form action="verifyCaptcha.php" class="contact__form" id="contactForm" onsubmit="ym(47839577, 'reachGoal', 'formSubmit');">
 				<input type="hidden" name="project_name" value="Мой персональный сайт-портфолио">
 				<input type="hidden" name="form_from" value="admin@yanpustynny.ru">
 				<input type="hidden" name="admin_email" value="y.pustynnyy@yandex.ru">
@@ -463,7 +470,7 @@
 				</div>
 				<div class="row" style="position: relative;">
 					<button type="submit" class="contact__btn-send" id="recaptchaResponse">Отправить</button>
-					<div class="success" style="width: 75px; height: 75px; position: absolute; top: 47%; left: 62%; background-size: contain;"></div>
+					<div class="success"></div>
 				</div>
 			</form>
 			<div class="row">

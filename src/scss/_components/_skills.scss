@@ -89,6 +89,8 @@
 						stroke: $standard-black;
 					}
 					&.svg__value {
+						stroke-dashoffset: 565.48;
+						transition: stroke-dashoffset 0.5s cubic-bezier(0,0,1,1);
 						stroke: url(#grad);
 						// stroke-dashoffset: 200px;
 					}
