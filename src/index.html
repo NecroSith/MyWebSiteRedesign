@@ -6,15 +6,19 @@
 	<meta name="description" content="Привет! Меня зовут Ян Пустынный. Я фронтенд разработчик, занимаюсь созданием сайтов различной сложности. Работаю на HTML/CSS, Javascript/jQuery, React/Redux, Wordpress/Modx">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:image" content="img/thumbnail.png">
+	<link rel="preload" href="css/main.css" as="style">
+
+	<meta property="og:image" content="img/bg-main.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="300">
 	<meta property="og:image:height" content="300">
 
-	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6Leblp8UAAAAABt6I9ltLjPdVu5V-dQN5MrmDD0b" async></script>
+
+	<script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
 
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
+	<script type="text/javascript" async>
 	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -397,46 +401,58 @@
 		<div class="portfolio__gallery">
 			<!-- <div class="container"> -->
 				<ul>
-					<li data-fancybox="gallery" data-src="img/runway.png" data-caption="RunWay Sale Warehouse Management Portal">
-						<img src="img/runway.png" alt="">
+					<li>
+						<img class="lazyload" data-src="img/runwaysale.webp" alt="">
 						<div class="gallery-item__overlay">
-							<i class="fas fa-plus"></i>
-							<span>RunwaySale Warehouse Management Portal</span>
+							<span>Портал крупной торговой сети</span>
+							<p>Заказчику было нужно доработать сайт и оптимизировать отображение страниц</p>
+							<p>Было создано более 40 новых разделов и оптимизирован сайт в целом, таким образом был расширен ассортимент представленных товаров на портале. </p>
+							<a href="https://www.runwaysale.co.za" target="__blank">Смотреть</a>
 						</div>
 					</li>
-					<li data-fancybox="gallery" data-src="img/bringitup.png" data-caption="Bring It Up website">
-						<img src="img/bringitup.png" alt="">
+					<li>
+						<img class="lazyload" data-src="img/bringitup.webp" alt="">
 						<div class="gallery-item__overlay">
-							<i class="fas fa-plus"></i>
-							<span>Bring it up website</span>
+							<span>Сайт по обучению навыкам ведения бизнеса</span>
+							<p>Было нужно создать сайт по имеющемуся макету</p>
+							<p>Был создан многостраничный сайт с формами и слайдерами с услугами по обучению. Реализованы отправка форм на почту и Google Analytics</p>
+							<a href="https://yanpustynnyy.ru/bringItUp/src/" target="__blank">Смотреть</a>
 						</div>
 					</li>
-					<li data-fancybox="gallery" data-src="img/alfagear.png" data-caption="Alfagear snow suit shop">
-						<img src="img/alfagear.png" alt="">
+					<li>
+						<img class="lazyload" data-src="img/alfagear.webp" alt="">
 						<div class="gallery-item__overlay">
-							<i class="fas fa-plus"></i>
-							<span>AlfaGear landing page</span>
+							<span>Лендинг по продаже сортивного оборудования</span>
+							<p>Заказчику было нужно внедрить новый дизайн сайта</p>
+							<p>Был проведен редизайн сайта, реализованы отправка форм на почту, Яндекс Метрика, Google ReCaptcha, адаптация для телефонов и планшетов</p>
+							<a href="http://www.alfa-gear.com/" target="__blank">Смотреть</a>
 						</div>
 					</li>
-					<li data-fancybox="gallery" data-src="img/mrtravel.png" data-caption="MRTravel travel agency landing page">
-						<img src="img/mrtravel.png" alt="">
+					<li>
+						<img class="lazyload" data-src="img/mrtravel.webp" alt="">
 						<div class="gallery-item__overlay">
-							<i class="fas fa-plus"></i>
-							<span>Mrtravel landing page</span>
+							<span>Сайт турагентства</span>
+							<p>Было нужно создать быстрый и отзывчивый сайт</p>
+							<p>Был создан адаптивный лендинг с возможностью фильтрации отелей по категориям. Оптимизирована загрузка страниц на телефонах и десктопах (85 и 97 по Google Page Speed).</p>
+							<a href="https://yanpustynnyy.ru/mrtravel/" target="__blank">Смотреть</a>
 						</div>
 					</li>
-					<li data-fancybox="gallery" data-src="img/apollo.png" data-caption="Apollo landing page">
-						<img src="img/apollo.png" alt="">
+					<li>
+						<img class="lazyload" data-src="img/apollo.webp" alt="">
 						<div class="gallery-item__overlay">
-							<i class="fas fa-plus"></i>
-							<span>Apollo landing page</span>
+							<span>Лендинг хостинг компании</span>
+							<p>Было нужно создать быстрый и отзывчивый сайт</p>
+							<p>Был создан адаптивный лендинг, хорошо смотрящийся на всех устройствах. Очень высокая скорость загрузки на телефонах и десктопах (95 и 99 по Google Page Speed).</p>
+							<a href="https://yanpustynnyy.ru/apollo/" target="__blank">Смотреть</a>
 						</div>
 					</li>
-					<li data-fancybox="gallery" data-src="img/portfolio.png" data-caption="My personal site portfolio">
-						<img src="img/portfolio.png" alt="">
+					<li>
+						<img class="lazyload" data-src="img/serbo.webp" alt="">
 						<div class="gallery-item__overlay">
-							<i class="fas fa-plus"></i>
-							<span>My personal site portfolio</span>
+							<span>Магазин по продаже настенных муралей</span>
+							<p>Было нужно дополнить сайт новыми страницами</p>
+							<p>Было создано 5 новых, полностью адаптивных, страниц в соответствии с существующим дизайном.</p>
+							<a href="https://yanpustynnyy.ru/serbo/" target="__blank">Смотреть</a>
 						</div>
 					</li>
 				</ul>
@@ -511,7 +527,7 @@
 		</div>
 	</section>
 
-	  <script>
+	  <script async>
 	  
 
          grecaptcha.ready(function() {
@@ -533,18 +549,18 @@
     });
 	  </script>
 
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+	<script src="//code.jquery.com/jquery-3.2.1.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js" defer></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" defer></script>
 
-	<script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+	<script src="libs/fancybox3/jquery.fancybox.min.js" defer></script>
 
-	<script src="js/main.js"></script>
-	<script src="js/ru.js"></script>
+	<script src="js/main.js" defer></script>
+	<script src="js/ru.js" defer></script>
 </body>
 </html>

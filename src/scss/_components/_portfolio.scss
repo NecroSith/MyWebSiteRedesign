@@ -13,8 +13,7 @@
 		padding-left: 270px;
 		padding-right: 260px;
 		padding-top: 80px;
-		background-image: linear-gradient(to right, $standard-linear-begin 0%, $standard-linear-end 100%), url("../img/bg-portfolio.png");
-		background-repeat: repeat;
+		background-image: linear-gradient(to right, $standard-linear-begin 0%, $standard-linear-end 100%), url("../img/bg-portfolio.webp");
 		background-size: contain, contain;
 		height: 704px;
 		@media screen and (max-width: 1600px) {
@@ -83,16 +82,19 @@
 					transition: all 0.3s ease-in;
 				}
 				.gallery-item__overlay {
-					cursor: pointer;
 					position: absolute;
 					top: 0%;
 					height: 256px;
 					left: 0;
 					right: 0;
-					background-color: rgba(255, 255, 255, 0.8);
+					background-color: rgba(255, 255, 255, 0.9);
 					border: 15px solid #b4cbc9;
 					transition: all 0.3s ease-in;
 					opacity: 0;
+					text-align: center;
+					@media screen and (max-width: 400px) {
+						height: 213px;
+					}
 					.fas {
 						font-size: 70px;
 					    position: absolute;
@@ -103,15 +105,46 @@
 					    color: $standard-green;
 					}
 					span {
-						position: absolute;
-						bottom: 26px;
-						left: 0;
-						text-transform: uppercase;
+						// position: absolute;
+						// bottom: 26px;
+						// left: 0;
+						// text-transform: uppercase;
 						color: $standard-black;
 						font-weight: 700;
-						font-size: 18px;
+						font-size: 14px;
 						text-align: center;
 						width: 100%;
+						@media screen and (max-width: 400px) {
+							font-size: 12px;
+						}
+					}
+					p {
+						color: darken($standard-grey, 15%);
+						font-size: 12px;
+						width: 90%;
+						margin: 10px auto 0 auto;
+						@media screen and (max-width: 400px) {
+							font-size: 10px;
+						}
+					}
+					a {
+
+						position: absolute;
+						bottom: 20px;
+						left: 50%;
+						transform: translateX(-50%);
+						text-transform: uppercase;
+						color: $standard-green;
+						font-size: 18px;
+						font-weight: 700;
+						transition: 0.3s ease-in;
+						@media screen and (max-width: 400px) {
+							bottom: 10px;
+						}
+						&:hover{
+							color: darken($standard-green, 20%);
+							transition: 0.3s ease-in;
+						}
 					}
 				}
 			}

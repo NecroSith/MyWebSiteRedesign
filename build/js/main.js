@@ -54,7 +54,7 @@ function setSkills(skills) {
 setSkills(skills);
 
 
-$('[data-fancybox="gallery"]').fancybox();
+// $('[data-fancybox="gallery"]').fancybox();
 
 $('.nav__social').on('click', function() {
 	$(this).find('ul').toggleClass('opened');
