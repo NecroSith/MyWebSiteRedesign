@@ -28,6 +28,19 @@ body {
 	}
 }
 
+.subtitle {
+	background: linear-gradient(to right, #00f298 0%, #07f7f7 100%);
+	color: #07f7f7;
+	font-size: 20px;
+	font-weight: 500;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 30px;
+	@media screen and (max-width: 576px) {
+		font-size: 15px;
+	}
+}
+
 .no-margin-padding {
 	margin: 0;
 	padding: 0;

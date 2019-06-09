@@ -2,8 +2,8 @@
 	padding: 100px 170px 50px 170px;
 	background-color: $standard-black;
 	text-align: center;
-	@media screen and (max-width: 768px) {
-		padding: 100px 100px 50px 100px;
+	@media screen and (max-width: 992px) {
+		padding: 100px 70px 50px 70px;
 	}
 	@media screen and (max-width: 576px) {
 		padding: 70px 10px 50px 10px;
@@ -42,37 +42,53 @@
 	.contact__social {
 		margin-top: 150px;
 		margin-bottom: 70px;
+		@media screen and (max-width: 992px) {
+			margin-top: 70px;
+		}
 		@media screen and (max-width: 576px) {
-			margin-top: 90px;
+			margin-top: 60px;
 		}
 		ul {
 			@extend .no-margin-padding;
 			display: flex;
 			justify-content: center;
-			& > a:not(:last-child) {
-				margin-right: 4%;
+			flex-wrap: wrap;
+			& > a {
+				margin: 0 2% 2% 2%;
 			}
 			li {
 				cursor: pointer;
-				width: 53px;
-				height: 52px;
+				// width: 53px;
+				// height: 52px;
+				width: 120px;
+				height: 120px;
 				border-radius: 50%;
 				list-style-type: none;
-				padding-top: 15px;
+				padding-top: 36px;
 				background-color: #313741;
 				transition: all 0.3s ease-in;
-				.fab {
-					font-size: 21px;
-					font-weight: 400;
+				@media screen and (max-width: 768px) {
+					width: 80px;
+					height: 80px;
+					padding-top: 19px;
+				}
+				.fab, .fas {
+					font-size: 45px;
 					text-transform: uppercase;
 					letter-spacing: 0.83px;
 					color: $standard-green;
 					transition: all 0.3s ease-in;
+					@media screen and (max-width: 768px) {
+						font-size: 38px;
+					}
+				}
+				.fab {
+					font-weight: 400;
 				}
 				&:hover {
 					background-color: #02cfb4;
 					transition: all 0.3s ease-in;
-					.fab {
+					.fab, .fas {
 						color: #313741;
 						transition: all 0.3s ease-in;
 					}
