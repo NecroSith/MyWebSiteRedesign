@@ -1183,7 +1183,7 @@ hr {
     border: 1px solid #00d7bb;
     border-radius: 50%;
     padding-top: 1.1em; }
-    .pros__item .item__img .fas {
+    .pros__item .item__img .fas, .pros__item .item__img .far {
       color: #00d7bb;
       font-size: 30px; }
   .pros__item .item__text {
